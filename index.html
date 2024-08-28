@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto - CHALLENGE ORACLE ONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/logo.svg" alt="Logo da alura">
+    </header>
+    <main class="container">
+        <div class="entrada">
+            <div class="entrada__input">
+                <textarea id="input" placeholder="Digite seu texto" wrap rows="10" maxlength="200"></textarea>
+            </div>
+            <p class="entrada__aviso">
+                <span class="material-symbols-outlined">error</span>
+                Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="entrada__botoes">
+                <button id="btnCript" class="btn btn-cript">Criptografar</button>
+                <button id="btn-decript" class="btn btn-regular">Descriptografar</button>
+            </div>
+        </div>
+        <div class="saida">
+            <img src="./assets/img/message-not-found.svg" alt="" id="imgNotFound">
+            <h2 id="msgNotFoundTitle" class="msgNotFound">Nenhuma mensagem encontrada</h2>
+            <p id="msgNotFoundText" class="msgNotFound">Digite um texto que deseja criptografar ou descriptografar.</p>
+            <p id="output" class="texto-saida"></p>
+            <button id="btnCopy" class="btn btn-regular btn-copy">Copiar</button>
+        </div>
+    </main>
+    <footer>Desenvolvido por Giulivan Sousa</footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
